@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // This script attempts to modify the content of the div with an invalid selector.
+    document.querySelector('div.myDiv').innerHTML = "This text is invisible."; 
+  </script>
+</body>
+</html>
